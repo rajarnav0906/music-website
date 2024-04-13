@@ -19,7 +19,7 @@ function secondsToMinutesAndSeconds(seconds) {
 
 async function getSongs(){
     //fetching all the songs 
-    let a = await fetch("./songs/");
+    let a = await fetch("/songs/");
     let response = await a.text();
     //creating a div to add all the songs which came from fetch API 
     /*we created a div because a.text() is returning the data in the form of a table so we have to 
